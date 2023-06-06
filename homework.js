@@ -59,12 +59,69 @@ class Person {
         this.height++;
         this.weight++;
         this.mood--;
-        this.bankAccount++;
+        this.bankAccount += 10;
     }
 
     buyHamster(hamster) {
         this.hamsters.push(hamster);
         this.mood += 10;
-        this.bankAccount -= Hamster.getPrice();
+        this.bankAccount -= hamster.getPrice();
     }
 }
+
+const timmy = new Person("Timmy", 5);
+console.log(timmy);
+
+timmy.eat();
+timmy.eat();
+timmy.eat();
+timmy.eat();
+timmy.eat();
+console.log(timmy);
+
+timmy.exercise();
+timmy.exercise();
+timmy.exercise();
+timmy.exercise();
+timmy.exercise();
+console.log(timmy);
+
+timmy.ageUp();
+timmy.ageUp();
+timmy.ageUp();
+timmy.ageUp();
+timmy.ageUp();
+timmy.ageUp();
+timmy.ageUp();
+timmy.ageUp();
+timmy.ageUp();
+console.log(timmy);
+
+const gus = new Hamster("Timmy", "Gus");
+timmy.buyHamster(gus);
+console.log(timmy)
+
+timmy.ageUp();
+timmy.ageUp();
+timmy.ageUp();
+timmy.ageUp();
+timmy.ageUp();
+timmy.ageUp();
+timmy.ageUp();
+timmy.ageUp();
+timmy.ageUp();
+timmy.ageUp();
+timmy.ageUp();
+timmy.ageUp();
+timmy.ageUp();
+timmy.ageUp();
+timmy.ageUp();
+console.log(timmy);
+
+timmy.eat();
+timmy.eat();
+console.log(timmy);
+
+timmy.exercise();
+timmy.exercise();
+console.log(timmy);
