@@ -1,3 +1,4 @@
+// CLASSES METHODS AND PROPERTIES
 class Hamster {
     constructor(owner = "", name, price = 15) {
         this.owner = owner;
@@ -125,3 +126,26 @@ console.log(timmy);
 timmy.exercise();
 timmy.exercise();
 console.log(timmy);
+
+
+
+// CHEF MAKE DINNER
+class Dinner {
+    constructor(appetizer = "", entree = "", dessert = "") {
+        this.appetizer = appetizer;
+        this.entree = entree;
+        this.dessert = dessert;
+    }
+}
+
+class FactoryChef {
+    dinner(item1, item2, item3) {
+        let newDinner = new Dinner(item1, item2, item3);
+        return newDinner;
+    }
+}
+
+const guyFieri = new FactoryChef();
+console.log(guyFieri.dinner("Strawberry", "Bread", "Coconut Milk"));
+console.log(guyFieri.dinner("Hamburger", "Bun", "Pickle"));
+console.log(guyFieri.dinner("Cheese", "Elbow Noodles", "Sour Cream"));
